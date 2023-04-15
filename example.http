@@ -1,0 +1,30 @@
+POST http://localhost:3000/users HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Andre",
+    "username": "andres",
+    "password": "1234"
+}
+
+###
+POST http://localhost:3000/login HTTP/1.1
+content-type: application/json
+
+{
+    "username": "andres",
+    "password": "1234"
+}
+
+###
+POST http://localhost:3000/refresh-token HTTP/1.1
+content-type: application/json
+
+{
+    "refresh_token": "7f4cae01-71d4-40d4-813d-410bc5019111"
+}
+
+###
+GET http://localhost:3000/courses HTTP/1.1
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzgxNzI3ODMsImV4cCI6MTY3ODE3MjgwMywic3ViIjoiZWFiZTg4ZDgtMTVkZi00NTIzLWE4MmItYzhkNzI3Y2JhZjE4In0.Er2CXf4zc8KdnQLk6WbiKuZTrL15hPvtB_W5xgOXrBg

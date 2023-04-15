@@ -1,0 +1,25 @@
+{
+  "name": "refresh",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node src/server.ts"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.1",
+    "prisma": "^4.12.0-integration-test-ecosystem-update.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@prisma/client": "4.12.0-integration-test-ecosystem-update.2",
+    "bcryptjs": "^2.4.3",
+    "dayjs": "^1.11.7",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^9.0.0"
+  }
+}
